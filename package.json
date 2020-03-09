@@ -1,0 +1,34 @@
+{
+    "name": "@dekproject/sendgrid",
+    "version": "0.0.1",
+    "description": "SendGrid interface plugin for DEK",
+    "main": "./build/index.js",
+    "scripts": {
+        "test": "mocha",
+        "build": "babel src -s -D -d build --presets env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dekproject/sendgrid.git"
+    },
+    "keywords": [
+        "dek",
+        "sendgrid"
+    ],
+    "author": "Andre Ferreira <andre@vigiadepreco.com.br>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dekproject/sendgrid/issues"
+    },
+    "homepage": "https://github.com/dekproject/sendgrid#readme",
+    "dependencies": {
+        "@sendgrid/mail": "^6.5.4"
+    },
+    "devDependencies": {
+        "@dekproject/scope": "^1.1.4",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "dotenv": "^6.2.0",
+        "mocha": "^6.0.1"
+    }
+}
